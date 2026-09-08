@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "correctness": "error"
+  },
+  "overrides": [
+    {
+      "files": ["apps/web/**/*.{js,jsx,ts,tsx}"],
+      "plugins": ["typescript", "unicorn", "oxc", "react", "vitest"],
+      "env": {
+        "browser": true,
+        "builtin": true
+      }
+    },
+    {
+      "files": ["apps/server/**/*.{js,ts}", "packages/**/*.{js,ts,tsx}"],
+      "plugins": ["typescript", "unicorn", "oxc", "vitest"],
+      "env": {
+        "builtin": true
+      },
+      "rules": {
+        "no-unused-vars": [
+          "error",
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_"
+          }
+        ]
+      }
+    }
+  ],
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "ignorePatterns": ["**/dist/**", "**/dist-ssr/**", "**/coverage/**", "**/node_modules/**"]
+}
