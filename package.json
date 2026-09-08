@@ -1,0 +1,15 @@
+{
+  "name": "tanda",
+  "private": true,
+  "packageManager": "bun@1.3.14",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "catalog": {
+    "typescript": "~6.0.0"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3"
+  }
+}
