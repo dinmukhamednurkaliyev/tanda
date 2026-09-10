@@ -2,22 +2,21 @@
 <img src="documentation/images/tanda-banner.png" alt="Tanda" width="100% />
 
 <img
-    src="https://img.shields.io/badge/Bun-000000?style=flat&logo=bun&logoColor=white"
+    src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white"
     alt="Bun"
   />
 <img
-    src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white"
+    src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"
     alt="TypeScript"
   />
 <img
-    src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"
+    src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"
     alt="React"
   />
 <img
-    src="https://img.shields.io/github/license/dinmukhamednurkaliyev/qadam?style=flat"
+    src="https://img.shields.io/github/license/dinmukhamednurkaliyev/qadam?style=flat-square"
     alt="License"
   />
-
 </p>
 
 # Tanda - Commerce Platform
