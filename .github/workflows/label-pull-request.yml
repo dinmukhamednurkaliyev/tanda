@@ -1,0 +1,25 @@
+name: Label Pull Request
+
+on:
+  pull_request_target:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  label:
+    name: Label Pull Request
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      # Read the configuration from the base branch; never check out PR code here.
+      - name: Label Pull Request
+        uses: actions/labeler@v7.0.0
+        with:
+          configuration-path: .github/labeler.yml
+          sync-labels: true
