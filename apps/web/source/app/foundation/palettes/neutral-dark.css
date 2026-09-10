@@ -1,0 +1,13 @@
+:root {
+  --palette-neutral-dark-50: #f7f9fa;
+  --palette-neutral-dark-100: #eceff1;
+  --palette-neutral-dark-200: #d7dcdf;
+  --palette-neutral-dark-300: #bac2c7;
+  --palette-neutral-dark-400: #929da3;
+  --palette-neutral-dark-500: #6d787f;
+  --palette-neutral-dark-600: #4d585f;
+  --palette-neutral-dark-700: #343d43;
+  --palette-neutral-dark-800: #222a2f;
+  --palette-neutral-dark-900: #151b1f;
+  --palette-neutral-dark-950: #0a0f12;
+}
