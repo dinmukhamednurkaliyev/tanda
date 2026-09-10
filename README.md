@@ -3,10 +3,12 @@
 
 </p>
 
-![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![License](https://img.shields.io/github/license/dinmukhamednurkaliyev/tanda?style=flat-square)
+<p align="center">
+  <img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white" alt="Bun" height="22" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" height="22" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" height="22" />
+  <img src="https://img.shields.io/github/license/dinmukhamednurkaliyev/tanda?style=flat-square" alt="License" height="22" />
+</p>
 
 # Tanda - Commerce Platform
 
