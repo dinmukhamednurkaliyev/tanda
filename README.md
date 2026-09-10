@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="documentation/images/tanda-banner.png" alt="Tanda"  width="100%/>
+</p>
+
 # Tanda - Commerce Platform
 
 ![Bun](https://img.shields.io/badge/Bun-000000?logo=bun&logoColor=white)
