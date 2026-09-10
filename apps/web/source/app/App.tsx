@@ -1,5 +1,7 @@
+import HomePage from '@/features/home/HomePage'
+
 function App() {
-  return <h1>Tanda</h1>
+  return <HomePage />
 }
 
 export default App

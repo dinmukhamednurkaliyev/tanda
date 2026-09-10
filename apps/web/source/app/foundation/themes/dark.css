@@ -28,12 +28,12 @@
     --on-primary-container: var(--palette-emerald-100);
 
     /* Secondary action */
-    --secondary: var(--palette-lime-300);
-    --secondary-hover: var(--palette-lime-200);
-    --secondary-pressed: var(--palette-lime-100);
-    --on-secondary: var(--palette-lime-950);
-    --secondary-container: var(--palette-lime-800);
-    --on-secondary-container: var(--palette-lime-100);
+    --secondary: var(--palette-teal-300);
+    --secondary-hover: var(--palette-teal-200);
+    --secondary-pressed: var(--palette-teal-100);
+    --on-secondary: var(--palette-teal-950);
+    --secondary-container: var(--palette-teal-800);
+    --on-secondary-container: var(--palette-teal-100);
 
     /* Borders and focus */
     --border-primary: var(--palette-neutral-600);
@@ -48,25 +48,25 @@
     /* Success */
     --success: #86efac;
     --on-success: #052e16;
-    --success-container: #14532d;
-    --on-success-container: #dcfce7;
+    --success-container: #0b4f31;
+    --on-success-container: #d7f3e4;
 
     /* Warning */
     --warning: #fcd34d;
     --on-warning: #422006;
-    --warning-container: #713f12;
-    --on-warning-container: #fef3c7;
+    --warning-container: #5e4300;
+    --on-warning-container: #f6e7be;
 
     /* Error */
     --error: #fda29b;
     --on-error: #55160c;
-    --error-container: #7a271a;
-    --on-error-container: #fee4e2;
+    --error-container: #6b1f25;
+    --on-error-container: #f9dee1;
 
     /* Information */
-    --information: #93c5fd;
-    --on-information: #172554;
-    --information-container: #1e3a8a;
-    --on-information-container: #dbeafe;
+    --information: #7dc6d5;
+    --on-information: #082b34;
+    --information-container: #0f4350;
+    --on-information-container: #d9f0f5;
   }
 }

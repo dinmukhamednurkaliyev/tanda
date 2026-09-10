@@ -9,65 +9,65 @@
 
     /* Surfaces */
     --surface: var(--palette-white);
-    --surface-container: var(--palette-neutral-100);
+    --surface-container: #f1f8f4;
     --surface-container-high: var(--palette-neutral-200);
     --surface-inverse: var(--palette-neutral-900);
 
     /* Content */
-    --on-background: var(--palette-neutral-900);
-    --on-surface: var(--palette-neutral-900);
+    --on-background: var(--palette-neutral-950);
+    --on-surface: #123126;
     --on-surface-secondary: var(--palette-neutral-600);
-    --on-surface-muted: var(--palette-neutral-500);
+    --on-surface-muted: var(--palette-neutral-600);
     --on-surface-inverse: var(--palette-neutral-50);
 
     /* Primary action */
-    --primary: var(--palette-emerald-600);
-    --primary-hover: var(--palette-emerald-700);
-    --primary-pressed: var(--palette-emerald-800);
-    --on-primary: var(--palette-white);
+    --primary: var(--palette-emerald-500);
+    --primary-hover: var(--palette-emerald-600);
+    --primary-pressed: var(--palette-emerald-700);
+    --on-primary: #02110b;
     --primary-container: var(--palette-emerald-100);
     --on-primary-container: var(--palette-emerald-900);
 
     /* Secondary action */
-    --secondary: var(--palette-lime-300);
-    --secondary-hover: var(--palette-lime-400);
-    --secondary-pressed: var(--palette-lime-500);
-    --on-secondary: var(--palette-lime-950);
-    --secondary-container: var(--palette-lime-100);
-    --on-secondary-container: var(--palette-lime-900);
+    --secondary: var(--palette-teal-600);
+    --secondary-hover: var(--palette-teal-700);
+    --secondary-pressed: var(--palette-teal-800);
+    --on-secondary: var(--palette-white);
+    --secondary-container: var(--palette-teal-100);
+    --on-secondary-container: var(--palette-teal-900);
 
     /* Borders and focus */
     --border-primary: var(--palette-neutral-300);
-    --border-secondary: var(--palette-neutral-200);
-    --border-interactive: var(--palette-neutral-500);
-    --focus: var(--palette-emerald-600);
+    --border-secondary: #e7f1ec;
+    --border-interactive: var(--palette-neutral-600);
+    --focus: var(--palette-teal-600);
 
     /* Disabled state */
-    --disabled: var(--palette-neutral-200);
-    --on-disabled: var(--palette-neutral-600);
+    --disabled: #c8d6d0;
+    --on-disabled: #7f8f88;
 
     /* Success */
-    --success: #17643b;
-    --on-success: #fff;
-    --success-container: #dcfce7;
-    --on-success-container: #14532d;
+    --success: #1c9b60;
+    --on-success: var(--palette-neutral-950);
+    --success-container: #d7f3e4;
+    --on-success-container: #0b4f31;
 
     /* Warning */
-    --warning: #854d0e;
-    --on-warning: #fff;
-    --warning-container: #fef3c7;
-    --on-warning-container: #713f12;
+    --warning: #d6a94a;
+    --on-warning: #1e1708;
+    --warning-container: #f6e7be;
+    --on-warning-container: #5e4300;
 
     /* Error */
-    --error: #b42318;
-    --on-error: #fff;
-    --error-container: #fee4e2;
-    --on-error-container: #7a271a;
+    --error: #c9434c;
+    --on-error: var(--palette-white);
+    --error-container: #f9dee1;
+    --on-error-container: #6b1f25;
 
     /* Information */
-    --information: #175cd3;
-    --on-information: #fff;
-    --information-container: #dbeafe;
-    --on-information-container: #1e3a8a;
+    --information: #2d8da2;
+    --on-information: #02110b;
+    --information-container: #d9f0f5;
+    --on-information-container: #0f4350;
   }
 }

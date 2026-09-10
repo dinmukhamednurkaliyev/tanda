@@ -4,7 +4,7 @@
 @import './foundation/themes/dark.css';
 @import './foundation/tokens/color.css';
 @import './foundation/tokens/text.css';
-@import './foundation/tokens/dimension.css';
+@import './foundation/tokens/spacing.css';
 @import './foundation/tokens/layout.css';
 @import './foundation/tokens/radius.css';
 @import './foundation/tokens/elevation.css';
