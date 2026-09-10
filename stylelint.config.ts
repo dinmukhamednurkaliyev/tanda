@@ -8,6 +8,7 @@ export default {
       files: ['apps/web/**/*.css'],
       extends: ['stylelint-config-tailwindcss'],
       rules: {
+        'custom-property-pattern': '^[a-z][a-z0-9]*(-[a-z0-9]+)*(--[a-z0-9]+(-[a-z0-9]+)*)?$',
         'at-rule-prelude-no-invalid': [true, { ignoreAtRules: ['apply'] }],
         'declaration-property-value-no-unknown': [
           true,

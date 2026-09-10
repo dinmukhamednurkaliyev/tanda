@@ -1,0 +1,9 @@
+:root {
+  --layer-base: 0;
+  --layer-dropdown: 10;
+  --layer-sticky: 20;
+  --layer-overlay: 30;
+  --layer-dialog: 40;
+  --layer-toast: 50;
+  --layer-tooltip: 60;
+}

@@ -1,1 +1,16 @@
 @import 'tailwindcss';
+@import './foundation/palette.css';
+@import './foundation/themes/light.css';
+@import './foundation/themes/dark.css';
+@import './foundation/tokens/colors.css';
+@import './foundation/tokens/fonts.css';
+@import './foundation/tokens/dimensions.css';
+@import './foundation/tokens/layout.css';
+@import './foundation/tokens/radius.css';
+@import './foundation/tokens/elevation.css';
+@import './foundation/tokens/animations.css';
+@import './foundation/tokens/interactions.css';
+@import './foundation/tokens/layers.css';
+@import './foundation/base.css';
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
