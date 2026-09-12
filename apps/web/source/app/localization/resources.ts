@@ -10,12 +10,6 @@ import englishCatalog from './locales/messages/english/catalog.json'
 import englishProduct from './locales/messages/english/product.json'
 import englishCart from './locales/messages/english/cart.json'
 import englishCheckout from './locales/messages/english/checkout.json'
-import kazakhCommon from './locales/messages/kazakh/common.json'
-import kazakhHome from './locales/messages/kazakh/home.json'
-import kazakhCatalog from './locales/messages/kazakh/catalog.json'
-import kazakhProduct from './locales/messages/kazakh/product.json'
-import kazakhCart from './locales/messages/kazakh/cart.json'
-import kazakhCheckout from './locales/messages/kazakh/checkout.json'
 
 export const namespaces = ['common', 'home', 'catalog', 'product', 'cart', 'checkout'] as const
 
@@ -39,13 +33,5 @@ export const resources = {
     product: englishProduct,
     cart: englishCart,
     checkout: englishCheckout,
-  } satisfies Messages,
-  kk: {
-    common: kazakhCommon,
-    home: kazakhHome,
-    catalog: kazakhCatalog,
-    product: kazakhProduct,
-    cart: kazakhCart,
-    checkout: kazakhCheckout,
   } satisfies Messages,
 }
