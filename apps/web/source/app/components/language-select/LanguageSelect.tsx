@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-import { languages } from '@/app/i18n/i18n'
+import { languages } from '@/app/localization/localization'
 
 export function LanguageSelect() {
   const { t, i18n } = useTranslation('common')

@@ -1,4 +1,4 @@
-import i18n from 'i18next'
+import localization from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
@@ -13,14 +13,14 @@ export const languages = [
 export const resources = { ru, en }
 
 function syncDocumentLanguage() {
-  const language = i18n.resolvedLanguage ?? 'ru'
+  const language = localization.resolvedLanguage ?? 'ru'
   document.documentElement.lang = language
-  document.documentElement.dir = i18n.dir(language)
+  document.documentElement.dir = localization.dir(language)
 }
 
-i18n.on('languageChanged', syncDocumentLanguage)
+localization.on('languageChanged', syncDocumentLanguage)
 
-export const initializeInternationalization = i18n
+export const initializeLocalization = localization
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
