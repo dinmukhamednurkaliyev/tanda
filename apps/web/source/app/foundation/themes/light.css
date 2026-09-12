@@ -1,0 +1,84 @@
+@layer base {
+  :root,
+  [data-theme='light'] {
+    color-scheme: light;
+
+    /* Page backgrounds */
+
+    --background-primary: var(--palette-neutral-light-100);
+    --background-secondary: var(--palette-neutral-light-200);
+
+    /* Surfaces */
+
+    --surface: var(--palette-neutral-light-50);
+    --surface-container: var(--palette-neutral-light-100);
+    --surface-container-high: var(--palette-neutral-light-200);
+    --surface-inverse: var(--palette-neutral-light-950);
+
+    /* Content */
+
+    --on-background: var(--palette-neutral-light-950);
+    --on-surface: var(--palette-neutral-light-900);
+    --on-surface-secondary: var(--palette-neutral-light-600);
+    --on-surface-muted: var(--palette-neutral-light-500);
+    --on-surface-inverse: var(--palette-neutral-light-50);
+
+    /* Primary */
+
+    --primary: var(--palette-emerald-700);
+    --primary-hover: var(--palette-emerald-800);
+    --primary-pressed: var(--palette-emerald-900);
+    --on-primary: var(--palette-neutral-light-50);
+    --primary-container: var(--palette-emerald-100);
+    --on-primary-container: var(--palette-emerald-900);
+
+    /* Secondary */
+
+    --secondary: var(--palette-neutral-light-900);
+    --secondary-hover: var(--palette-neutral-light-800);
+    --secondary-pressed: var(--palette-neutral-light-700);
+    --on-secondary: var(--palette-neutral-light-50);
+    --secondary-container: var(--palette-neutral-light-200);
+    --on-secondary-container: var(--palette-neutral-light-900);
+
+    /* Borders and focus */
+
+    --border-primary: var(--palette-neutral-light-300);
+    --border-secondary: var(--palette-neutral-light-200);
+    --border-interactive: var(--palette-neutral-light-600);
+    --focus: var(--palette-emerald-700);
+
+    /* Disabled */
+
+    --disabled: var(--palette-neutral-light-300);
+    --on-disabled: var(--palette-neutral-light-500);
+
+    /* Success */
+
+    --success: var(--palette-emerald-700);
+    --on-success: var(--palette-neutral-light-50);
+    --success-container: var(--palette-emerald-100);
+    --on-success-container: var(--palette-emerald-900);
+
+    /* Warning */
+
+    --warning: var(--palette-amber-700);
+    --on-warning: var(--palette-neutral-light-50);
+    --warning-container: var(--palette-amber-100);
+    --on-warning-container: var(--palette-amber-800);
+
+    /* Error */
+
+    --error: var(--palette-red-700);
+    --on-error: var(--palette-neutral-light-50);
+    --error-container: var(--palette-red-100);
+    --on-error-container: var(--palette-red-800);
+
+    /* Information */
+
+    --information: var(--palette-blue-700);
+    --on-information: var(--palette-neutral-light-50);
+    --information-container: var(--palette-blue-100);
+    --on-information-container: var(--palette-blue-800);
+  }
+}
