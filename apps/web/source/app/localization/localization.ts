@@ -2,15 +2,12 @@ import localization from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
-import { en } from './locales/en'
-import { ru } from './locales/ru'
+import { namespaces, resources } from './resources'
 
 export const languages = [
   { code: 'ru', label: 'Русский' },
   { code: 'en', label: 'English' },
 ] as const
-
-export const resources = { ru, en }
 
 function syncDocumentLanguage() {
   const language = localization.resolvedLanguage ?? 'ru'
@@ -29,7 +26,7 @@ export const initializeLocalization = localization
     fallbackLng: 'ru',
     load: 'languageOnly',
     defaultNS: 'common',
-    ns: ['common', 'home'],
+    ns: [...namespaces],
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],

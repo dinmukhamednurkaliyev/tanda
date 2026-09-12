@@ -1,10 +1,10 @@
 import 'i18next'
-import type { ru } from './locales/ru'
+import type { Messages } from './resources'
 
 declare module 'i18next' {
   interface CustomTypeOptions {
     defaultNS: 'common'
-    resources: typeof ru
+    resources: Messages
     strictKeyChecks: true
   }
 }
