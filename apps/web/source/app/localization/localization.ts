@@ -1,37 +1,38 @@
-import localization from 'i18next'
+import i18next from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
-import { namespaces, resources } from './resources'
+import { languageDetectionOptions } from './language-detector'
+import { availableLanguages, namespaces, resources, type Language } from './resources'
 
-export const languages = [
-  { code: 'ru', label: 'Русский' },
-  { code: 'en', label: 'English' },
-] as const
+const fallbackLanguage: Language = 'ru'
 
-function syncDocumentLanguage() {
-  const language = localization.resolvedLanguage ?? 'ru'
+function syncDocumentLanguage(language: string): void {
   document.documentElement.lang = language
-  document.documentElement.dir = localization.dir(language)
+  document.documentElement.dir = i18next.dir(language)
 }
 
-localization.on('languageChanged', syncDocumentLanguage)
+export const localization = i18next
 
-export const initializeLocalization = localization
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources,
-    supportedLngs: languages.map(({ code }) => code),
-    fallbackLng: 'ru',
-    load: 'languageOnly',
-    defaultNS: 'common',
-    ns: [...namespaces],
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-      lookupLocalStorage: 'tanda.language',
-    },
-    interpolation: { escapeValue: false },
-  })
-  .then(syncDocumentLanguage)
+export async function initializeLocalization(): Promise<void> {
+  localization.on('languageChanged', syncDocumentLanguage)
+
+  await localization
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+      resources,
+      supportedLngs: availableLanguages.map(({ code }) => code),
+      fallbackLng: fallbackLanguage,
+      load: 'languageOnly',
+      defaultNS: 'common',
+      ns: [...namespaces],
+      detection: languageDetectionOptions,
+
+      interpolation: {
+        escapeValue: false,
+      },
+    })
+
+  syncDocumentLanguage(localization.resolvedLanguage ?? fallbackLanguage)
+}
