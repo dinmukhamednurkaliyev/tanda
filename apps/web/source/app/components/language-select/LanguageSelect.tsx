@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-import { languages } from '@/app/localization/localization'
+import { availableLanguages } from '@/app/localization/resources'
 
 export function LanguageSelect() {
   const { t, i18n } = useTranslation('common')
@@ -13,7 +13,7 @@ export function LanguageSelect() {
         value={i18n.resolvedLanguage ?? 'ru'}
         onChange={(event) => void i18n.changeLanguage(event.target.value)}
       >
-        {languages.map(({ code, label }) => (
+        {availableLanguages.map(({ code, label }) => (
           <option key={code} value={code} lang={code}>
             {label}
           </option>

@@ -5,7 +5,7 @@ import App from '@/app/App'
 import { initializeLocalization } from '@/app/localization/localization'
 import '@/app/app.css'
 
-await initializeLocalization
+await initializeLocalization()
 
 createRoot(document.getElementById('root')!).render(
   createElement(StrictMode, null, createElement(App)),
