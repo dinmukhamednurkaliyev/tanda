@@ -26,12 +26,12 @@
     "check": "bun run type-check && bun run lint && bun run stylelint && bun run format:check"
   },
   "devDependencies": {
-    "@types/node": "^26.4.1",
+    "@types/node": "^26.6.4",
     "jiti": "2.7.0",
-    "oxlint": "^1.81.0",
-    "prettier": "^3.9.6",
+    "oxlint": "^1.87.0",
+    "prettier": "^3.9.9",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "stylelint": "^17.15.0",
+    "stylelint": "^17.16.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-config-tailwindcss": "^1.0.1",
     "typescript": "~6.0.3"
